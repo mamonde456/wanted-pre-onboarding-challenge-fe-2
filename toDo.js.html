@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: toDo.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: toDo.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @function createToDo
+ * 할 일을 추가할 수 있습니다.
+ * 내용 없이는 추가할 수 없습니다.
+ * @param {Object} toDo - toDo에는 아이디, 내용, 카테고리, 완료여부가 필요합니다.
+ * @param {string} toDo.id - toDo의 id
+ * @param {string} toDo.content - toDo의 내용
+ * @param {string} toDo.category - toDo의 카테고리
+ * @param {string} [toDo.tags] - toDo의 태그
+ * @param {boolean} isFinish - 완료 여부(done/doing)
+ */
+function createToDo(toDo, isFinish) {}
+
+/** @function readToDo
+ * 모든 할 일을 조회할 수 있습니다.
+ * ID를 기반으로 특정 할 일을 조회할 수 있습니다.
+ * @param {Object} toDo
+ * @param {string} [toDo.id]
+ */
+function readToDo(toDo) {}
+
+/** @function updateToDo
+ * ID를 제외한 모든 속성을 수정할 수 있습니다.
+ * 특정 할 일의 특정 태그를 수정할 수 있습니다.
+ * @param {Object} toDo
+ * @param {string} toDo.id - 업데이트하기 위해서는 필수 요소입니다.
+ * @param {string} [toDo.content]
+ * @param {string} [toDo.category]
+ * @param {string} [toDo.tags]
+ */
+function updateToDo(toDo) {}
+
+/** @function deleteToDo
+ * ID를 기반으로 특정 할 일을 삭제할 수 있습니다.
+ * 모든 할 일을 제거할 수 있습니다.
+ * 특정 할 일의 특정 태그를 삭제할 수 있습니다.
+ * 특정 할 일의 모든 태그를 제거할 수 있습니다.
+ * @param {Object} toDo
+ * @param {string} toDo.id - Todo를 제거하기 위해서 필수 요소입니다.
+ * @param {string} [toDo.tags.id] - 특정 할 일의 특정 태그를 삭제할 수 있습니다.
+ * @param {boolean} [toDo.tags.isAllRemove=false] - 특정 할 일의 모든 태그를 삭제할 수 있습니다.
+ * @param {boolean} [isAllRemove=false] - 모든 할 일을 제거합니다. 기본값은 false입니다.
+ */
+function deleteToDo(toDo, isAllRemove) {}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Book.html">Book</a></li><li><a href="DairyProduct.html">DairyProduct</a></li><li><a href="Milk.html">Milk</a></li></ul><h3>Global</h3><ul><li><a href="global.html#bar">bar</a></li><li><a href="global.html#createToDo%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2584%25EC%25B6%2594%25EA%25B0%2580%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.%25EB%2582%25B4%25EC%259A%25A9%25EC%2597%2586%25EC%259D%25B4%25EB%258A%2594%25EC%25B6%2594%25EA%25B0%2580%25ED%2595%25A0%25EC%2588%2598%25EC%2597%2586%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.">createToDo
+할 일을 추가할 수 있습니다.
+내용 없이는 추가할 수 없습니다.</a></li><li><a href="global.html#deleteToDoID%25EB%25A5%25BC%25EA%25B8%25B0%25EB%25B0%2598%25EC%259C%25BC%25EB%25A1%259C%25ED%258A%25B9%25EC%25A0%2595%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2584%25EC%2582%25AD%25EC%25A0%259C%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.%25EB%25AA%25A8%25EB%2593%25A0%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2584%25EC%25A0%259C%25EA%25B1%25B0%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.%25ED%258A%25B9%25EC%25A0%2595%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2598%25ED%258A%25B9%25EC%25A0%2595%25ED%2583%259C%25EA%25B7%25B8%25EB%25A5%25BC%25EC%2582%25AD%25EC%25A0%259C%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.%25ED%258A%25B9%25EC%25A0%2595%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2598%25EB%25AA%25A8%25EB%2593%25A0%25ED%2583%259C%25EA%25B7%25B8%25EB%25A5%25BC%25EC%25A0%259C%25EA%25B1%25B0%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.">deleteToDo
+ID를 기반으로 특정 할 일을 삭제할 수 있습니다.
+모든 할 일을 제거할 수 있습니다.
+특정 할 일의 특정 태그를 삭제할 수 있습니다.
+특정 할 일의 모든 태그를 제거할 수 있습니다.</a></li><li><a href="global.html#foo">foo</a></li><li><a href="global.html#readToDo%25EB%25AA%25A8%25EB%2593%25A0%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2584%25EC%25A1%25B0%25ED%259A%258C%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.ID%25EB%25A5%25BC%25EA%25B8%25B0%25EB%25B0%2598%25EC%259C%25BC%25EB%25A1%259C%25ED%258A%25B9%25EC%25A0%2595%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2584%25EC%25A1%25B0%25ED%259A%258C%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.">readToDo
+모든 할 일을 조회할 수 있습니다.
+ID를 기반으로 특정 할 일을 조회할 수 있습니다.</a></li><li><a href="global.html#updateToDoID%25EB%25A5%25BC%25EC%25A0%259C%25EC%2599%25B8%25ED%2595%259C%25EB%25AA%25A8%25EB%2593%25A0%25EC%2586%258D%25EC%2584%25B1%25EC%259D%2584%25EC%2588%2598%25EC%25A0%2595%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.%25ED%258A%25B9%25EC%25A0%2595%25ED%2595%25A0%25EC%259D%25BC%25EC%259D%2598%25ED%258A%25B9%25EC%25A0%2595%25ED%2583%259C%25EA%25B7%25B8%25EB%25A5%25BC%25EC%2588%2598%25EC%25A0%2595%25ED%2595%25A0%25EC%2588%2598%25EC%259E%2588%25EC%258A%25B5%25EB%258B%2588%25EB%258B%25A4.">updateToDo
+ID를 제외한 모든 속성을 수정할 수 있습니다.
+특정 할 일의 특정 태그를 수정할 수 있습니다.</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Mon Feb 06 2023 16:00:31 GMT+0900 (Korean Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
