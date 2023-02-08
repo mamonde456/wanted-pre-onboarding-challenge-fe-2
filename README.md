@@ -54,6 +54,12 @@ Todo {
 - 특정 할 일의 특정 태그를 삭제할 수 있다.
 - 특정 할 일의 모든 태그를 제거할 수 있다.
 
+## 개선 사항
+
+### 1차
+
+- `Todo` 앱을 `Interface`로 설계하고 모델링
+
 #### Reference
 
 - [jsdoc.app](https://jsdoc.app)
