@@ -1,6 +1,6 @@
 interface ITags {
   id: string;
-  tag: string;
+  tag?: string;
 }
 interface IToDo {
   id: string;
@@ -18,24 +18,24 @@ interface IReadToDo {
   id?: string;
 }
 
-function readToDo({ id }: IReadToDo) {
+function readToDo(id: IReadToDo) {
   return;
 }
 
 interface IUpdateToDo {
   id: string;
-  tag: ITags;
+  tag?: ITags;
 }
 
-function updateToDo(id: IUpdateToDo, tag: IUpdateToDo) {
+function updateToDo({ id, tag }: IUpdateToDo) {
   return;
 }
 
 interface IDeleteToDo {
   id: string;
-  tags: ITags[];
+  tags?: ITags[];
 }
 
-function deleteToDo(id: IDeleteToDo, tags: IDeleteToDo) {
+function deleteToDo({ id, tags }: IDeleteToDo) {
   return;
 }
