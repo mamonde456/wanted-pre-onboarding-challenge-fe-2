@@ -10,32 +10,24 @@ interface IToDo {
   tags?: ITags[];
 }
 
-function createToDo(todo: IToDo) {
-  return;
-}
+function createToDo(todo: IToDo) {}
 
 interface IReadToDo {
   id?: string;
 }
 
-function readToDo(id: IReadToDo) {
-  return;
-}
+function readToDo(id: IReadToDo) {}
 
 interface IUpdateToDo {
   id: string;
   tag?: ITags;
 }
 
-function updateToDo({ id, tag }: IUpdateToDo) {
-  return;
-}
+function updateToDo({ id, tag }: IUpdateToDo) {}
 
 interface IDeleteToDo {
   id: string;
   tags?: ITags[];
 }
 
-function deleteToDo({ id, tags }: IDeleteToDo) {
-  return;
-}
+function deleteToDo({ id, tags }: IDeleteToDo) {}
