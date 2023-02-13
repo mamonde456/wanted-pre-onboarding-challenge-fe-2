@@ -60,6 +60,11 @@ Todo {
 
 - `Todo` 앱을 `Interface`로 설계하고 모델링
 
+### 2차
+
+- `return` 값 제거.
+  (함수에서 return 하는 값이 없다면 제거해준다. return 값이 있다면, return 타입을 명시해주어야 typescript가 void로 추론하지 않는다.)
+
 #### Reference
 
 - [jsdoc.app](https://jsdoc.app)
