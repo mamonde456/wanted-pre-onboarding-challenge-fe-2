@@ -61,12 +61,18 @@ Todo {
 - `Todo` 앱을 `Interface`로 설계하고 모델링
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a3a974601948b26dc7ec88a0f7cb96cbf697ec1d
 ### 2차
 
 - `return` 값 제거.
   (함수에서 return 하는 값이 없다면 제거해준다. return 값이 있다면, return 타입을 명시해주어야 typescript가 void로 추론하지 않는다.)
 
+<<<<<<< HEAD
+>>>>>>> a3a974601948b26dc7ec88a0f7cb96cbf697ec1d
+=======
 >>>>>>> a3a974601948b26dc7ec88a0f7cb96cbf697ec1d
 #### Reference
 
