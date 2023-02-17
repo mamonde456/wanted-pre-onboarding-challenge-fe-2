@@ -1,4 +1,4 @@
-interface ITags {
+interface ITag {
   id: string;
   tag?: string;
 }
@@ -7,7 +7,7 @@ interface IToDo {
   content: string;
   category: "DOING" | "DONE" | "TODO";
   isFinish: boolean;
-  tags?: ITags[];
+  tags?: ITag[];
 }
 
 function createToDo(todo: IToDo) {}
@@ -16,18 +16,17 @@ interface IReadToDo {
   id?: string;
 }
 
-function readToDo(id: IReadToDo) {}
+function readToDo(todo: IReadToDo) {}
 
-interface IUpdateToDo {
-  id: string;
-  tag?: ITags;
-}
+type UpdateToDo = Partial<Omit<IToDo,"id">> & {id:string}
 
-function updateToDo({ id, tag }: IUpdateToDo) {}
+function updateToDo(todo: UpdateToDo) {}
 
 interface IDeleteToDo {
   id: string;
-  tags?: ITags[];
+  tags?: {
+    id:string;
+  };
 }
 
-function deleteToDo({ id, tags }: IDeleteToDo) {}
+function deleteToDo(isAll:boolean,todo?: IDeleteToDo) {}
